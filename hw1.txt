@@ -1,5 +1,14 @@
 1. rm -r * = remove all directories. on linux, you won't be prompted for confirmation, and after execution you can't undo the changes.
 if executed on the root folder, you practically brick your computer and render it unusable.
 
-2. compiling is the first step you need to execute a .cc file. it turns that .cc file into a .o file, converting the source code into some machine language.
+3. compiling is the first step you need to execute a .cc file. it turns that .cc file into a .o file, converting the source code into some machine language.
 linking comes directly after compiling. this turns the .o file from before into a .exe (or .app on mac), which allows the program to be executed.
+
+10. sum wasn't initialized, so what'll be printed by the printf is some arbitrary garbage value.
+sum should be intialized with a base value of 0, so that way there is something that 'i' can properly add to.
+
+11. the check for n = 0 is incorrect and the program will not execute properly. to properly compare two values in an if statement, you need double equal signs.
+so, change if(n=0) to if(n==0).
+
+12. same as 11; the check for if i = 0 is incorrect.
+change if(i=0) to if(i==0).
