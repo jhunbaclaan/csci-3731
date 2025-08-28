@@ -1,0 +1,5 @@
+1. rm -r * = remove all directories. on linux, you won't be prompted for confirmation, and after execution you can't undo the changes.
+if executed on the root folder, you practically brick your computer and render it unusable.
+
+2. compiling is the first step you need to execute a .cc file. it turns that .cc file into a .o file, converting the source code into some machine language.
+linking comes directly after compiling. this turns the .o file from before into a .exe (or .app on mac), which allows the program to be executed.
