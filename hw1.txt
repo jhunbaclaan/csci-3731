@@ -1,4 +1,4 @@
-1. rm -r * = remove all directories. on linux, you won't be prompted for confirmation; regardless of platform, after execution you can't undo the changes.
+1. rm -r * = remove everything. on linux, you won't be prompted for confirmation; regardless of platform, after execution you can't undo the changes.
 if executed on the root folder, you practically brick your computer and render it unusable.
 
 3. compiling is the first step you need to do to execute a .cc file. it turns that .cc file into a .o file, converting the source code into some machine language.
