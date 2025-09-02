@@ -7,7 +7,7 @@ linking comes directly after compiling. this turns the .o file from before into 
 10. sum wasn't initialized, so what'll be printed by the printf is some arbitrary garbage value.
 sum should be intialized with a base value of 0, so that way there is something that 'i' can properly add to.
 
-11. the check for n = 0 is incorrect and the program will not execute properly. to properly compare two values in an if statement, you need double equal signs.
+11. the check for n = 0 is incorrect and the program will not execute properly (or refuse to compile). to properly compare two values in an if statement, you need double equal signs.
 so, change if(n=0) to if(n==0).
 
 12. same as 11; the check for if i = 0 is incorrect.
