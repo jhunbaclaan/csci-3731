@@ -4,15 +4,8 @@ mandelbrot set program that uses static values a & b iteratively with scaling va
 */
 
 #include <cstdio>
-
-// simplifying the mandelbrot equations by making functions
-// interestingly methods have to be put above main (unlike java where they can js be anywhere outside)
-// it's a strange adjustment
-
-// 08/03: section 3.2.2 of the book actually solves this!! you have to declare at the top but it doesnt have to be the full method
-// this makes it a bit easier...
-int xprime(int a, int x, int y);
-int yprime(int b, int x, int y);
+// titles of header files have to be surrounded in quotations
+#include "primes.h"
 
 // main
 int main(int argc, char** agv)
@@ -35,6 +28,12 @@ int main(int argc, char** agv)
     printf("iteration 2: a = %d, b = %d, x = %d, y = %d\n", a,b,x,y);
     
 }
+// simplifying the mandelbrot equations by making functions
+// interestingly methods have to be put above main (unlike java where they can js be anywhere outside)
+// it's a strange adjustment
+
+// 08/03: section 3.2.2 of the book actually solves this!! you can use header for declarations! see primes.h
+// this makes it a bit easier...
 // defining the methods that were declared above
 int xprime(int a, int x, int y)
 {
