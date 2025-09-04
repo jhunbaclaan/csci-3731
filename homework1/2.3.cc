@@ -22,10 +22,12 @@ int main(int argc, char** agv)
     not sure.
     */
     // iteration processsss
-    printf("iteration 1: a = %d, b = %d, x = %d, y = %d\n", a,b,x,y);
-    x = xprime(a,x,y);
-    y = yprime(b,x,y);
-    printf("iteration 2: a = %d, b = %d, x = %d, y = %d\n", a,b,x,y);
+    for(int i = 0; i <= 10; i++)
+    {
+        printf("iteration %d: a = %d, b = %d, x = %d, y = %d\n", i,a,b,x,y);
+        x = xprime(a,x,y);
+        y = yprime(b,x,y);
+    }
     
 }
 // simplifying the mandelbrot equations by making functions
