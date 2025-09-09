@@ -1,0 +1,12 @@
+2. function declaration = stating the function's return type + arguments.
+function defining = creating/stating the actual code of the function.
+
+3. c/c++ is designed to only do one pass/read-through of your code upon execution. this is why function declaration is required; it tells the compiler that the function exists.
+java does not need to do this because it does multi-passing execution by default.
+
+4. the preprocessor is a standalone program that executes preprocessor (#) directives (like #include or #define. it's similar to java's 'import' keyword.
+
+6. thing.h is a header file (as shown by the .h file type), which should not be compiled. your main file can handle the compiling of headers with #include.
+
+8. MAX_VALUE is not a variable. it's actually a preprocessor-assigned macro that replaces instances of "MAX_VALUE" with the string literal "32767".
+note that there is no data type attached to MAX_VALUE. the compiler cannot handle MAX_VALUE because of this.
