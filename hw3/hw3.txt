@@ -1,0 +1,18 @@
+6. '*' is used for dereferencing a pointer; it returns the data associated to a pointer. 
+'&' declares some variable as a pointer. 
+
+9. a) declare a variable 'a' that is an int if dereferenced.
+b) declare a constant int b
+c) declare a variable 'c' that is a constant int if dereferenced. 
+d) declare a constant variable 'd' that is an int if dereferenced.
+e) declare a constant variable 'e' that is a constant int if dereferenced. (if e is dereferenced, the value & assignment cannot be changed)
+
+12. the function would return x^2 as a pointer to a double instead of directly returning the square & cube of a number.
+the return type should be void. i'd also change the parameters to have x^2 and x^3 as pointers, and any return statements would be replaced with dereferences.
+void powers(double x, double* x2, double* x3)
+{
+    *x2 = x * x;
+    *x3 = x * x * x;
+}
+
+13. the seg fault most likely occurs in line 9, since it's the only line that handles a dereference.
