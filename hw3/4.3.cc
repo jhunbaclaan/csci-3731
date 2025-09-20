@@ -1,7 +1,7 @@
 /*
 @@ created by jhun baclaan, d.o.c. sep. 19 2025
 a lot of the code is copy and pasted from 3.3; i only made modifications for the changed mandelbrot functions
-as well as file writing
+as well as writing the drawing to a file
 */
 
 #include <cstdio>
@@ -24,7 +24,7 @@ int main(int args, char** agv)
     // using 80 since the book advises it
     for(int i = 0; i < 80; i++)
     {
-        for(int n = 0; n < 80; n++) // rows
+        for(int n = 0; n < 80; n++) // rows, so 80x80 grid
         {
             // need this step for resetting every iteration
             x = 0.0;
@@ -35,7 +35,7 @@ int main(int args, char** agv)
                 performMandelbrot(a, b, &x, &y); // it works!
                 if(checkBound(x, y) == true)
                 {
-                    fprintf(fp, " ");
+                    fprintf(fp, " "); // change all printf to fprintf
                     break;
                 }
                 else if (z == 999)

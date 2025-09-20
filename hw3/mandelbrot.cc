@@ -5,7 +5,7 @@ bool checkBound(float x, float y)
 {
     return ((x * x) + (y * y) > 4.0);
 }
-// adding another function that returns updated x & y
+// combined the xprime/yprime functions into one as per the assignment's orders
 // this looks pretty sloppy so if this is reused at some point in the future i think i'll make it more efficient
 void performMandelbrot(float a, float b, float* x, float* y)
 {
