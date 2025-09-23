@@ -1,5 +1,11 @@
-1.
+1. java treats the array as an object that has a proper beginning/end (its length). java also handles checks for bounds and validity
+   c++ treats the array as some allocated piece of memory. this means that you, the programmer, have to manually handle length & validity
 2. printf("%d\n", *(list+6));
-5. f(a+3, 3);
-6. 
+5. f(a+2, 3);
+6. the for loop checks for a null character, however it does NOT check for when 'i' is outside of the string's length.
+i'd fix this by adding a check for string length in the for loop
+(this is assuming we created a variable named 'size' that holds the length of the string; whether that be via counter or with a function)
+...
+for(int i = 0; string[i] != "\0" && i < size; ++i)
+...
 13. data on the stack is destroyed once you're out of scope, while data on the heap stays forever until you manually go in and release it.
