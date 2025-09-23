@@ -2,3 +2,4 @@
 2. printf("%d\n", *(list+6));
 5. f(a+3, 3);
 6. 
+13. data on the stack is destroyed once you're out of scope, while data on the heap stays forever until you manually go in and release it.
