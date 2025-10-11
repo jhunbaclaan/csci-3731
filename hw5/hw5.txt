@@ -1,0 +1,7 @@
+1. the problem with 2d arrays in c/c++ is that when being passed as an argument, the dimensions of the array have to be specified
+at compile time. this means that a 2d array with x & y dimensions will work for one function, but never for any others.
+
+2. you can either:
+ a) store the 2d array into a flat 1d array by hard-coding some offset to elements of different rows, or 
+ b) use the numerical recipes trick by making a pointer array alongside a flat 1d array, then making each pointer point to a row
+ in the flat array, based off of width.
