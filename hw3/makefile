@@ -1,4 +1,4 @@
-all: 6.2
+all: 4.3
 
 clean:
 	rm -f *.o
