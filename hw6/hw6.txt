@@ -1,0 +1,18 @@
+1. libraries contain necessary definitions, functions, and macros. this means that you don't have to create all of that yourself, and it makes compilation easier & faster.
+2. static libs -- added during linking, merges with other static libraries to make an executable; is called during execution
+    dynamic libs -- does not merge into an executable but is loaded whenever the program starts
+3. package managers make installation and upgrading easier, compared to compiling from source which requires you to obtain the source code and build the library yourself.
+    it's better to compile a library yourself if you either need the latest version of the library at all times, or if you need a customized version.
+
+4. all: main
+
+   run:
+        ./main
+
+    main.o: main.cc png.h
+        g++ -c -Wall -Werror main.o main.cc
+    
+    main: main.o libpng.dylib
+        g++ -o main main.o -L /ust/local/lib/ -libpng
+
+5. a struct a public object without methods. e.g. a struct for a shape would have length, width, area etc. but it wouldn't have getters or setters.
