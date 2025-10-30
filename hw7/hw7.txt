@@ -1,0 +1,14 @@
+1. values for the private variables aren't initialized; i would set them to an initial value of 0.0
+2. data types for the parameters are wrong; should be double instead of int
+   assigning position and velocity to this position/velocity is also incorrect; use -> instead of . (this->position, this->velocity)
+   missing semicolon at the end of the constructor
+3. a) call a method that takes a pointer to an int, then returns a pointer to an int
+b) call a method that takes a pointer to an int, then returns a pointer to a constant int
+c) call a method that takes a pointer to an int, then returns a constant pointer to a constant int
+d) call a method that takes a pointer to a constant int, then returns a constant pointer to a constant int
+e) call a constant method that takes a pointer to a constant int, then returns a constant pointer to a constant int
+^^ dude....
+5. pointer: must be dereferenced before usage, location of where it points to can be change, can be null (nullptr)
+   reference: is automatically dereferenced, points to one and only one location, cannot be null (has to be pointing to a valid variable)
+10. declaring a method like that doesn't really do anything for you. the const makes it so that the function cannot modify value.
+    this is redundant since without a pointer attached to the const's data type, any arithmetic within the function will only make the compiler yell at you.
