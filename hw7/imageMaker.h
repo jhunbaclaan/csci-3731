@@ -3,16 +3,18 @@
 
 class imageMaker{
     private:
-        const char fileName;
-        int width = 0;
-        int height = 0;
+        const char* fileName;
+        int width;
+        int height;
+        unsigned char* pixels;
 
     public:
-        imageMaker(const char* fileName, int width, int height);
+        imageMaker(const char* fileName); 
         virtual ~imageMaker();
 
-        unsigned char* readPPM(const char* fileName) const;
-        void makePPM(const char* fileName, unsigned char* pixels, int width, int height) const;
+        unsigned char* readPPM(const char* fileName);
+        void makePPM(const char* fileName) const;
+        void operator+=(int value); // for overloading
 };
 
 #endif
