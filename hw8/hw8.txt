@@ -1,0 +1,13 @@
+2. ownership gives responsibility for some chunk of data to one object at a time. because of this responsibility, the object has to perform
+memory management by making sure it properly performs resource creation and destruction (via constructors/destructors).
+
+5. the & creates a dangling reference; it is redundant, so:
+write the declaration as Car Factory::makeACar()
+
+8. copying = creating a new object that has the same data as the object being copied.
+moving = moving data (and ownership) from one object to another.
+
+12. forward declarations should be made if there are two classes that include each other (e.g. class A includes B and class B includes A)
+
+13. since Part is being forward declared, it has to be included as a pointer or reference
+rewrite the Part initialization as Part* p;
