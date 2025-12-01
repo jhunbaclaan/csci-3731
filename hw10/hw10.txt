@@ -1,0 +1,7 @@
+1. a template is a specification for how to make a class
+    it replaces the data types in a class to generic ones so that you can make the real class later.
+2. c++ collections are templates, while java collections are casted from an object
+5. an iterator is a class that represents a collection's current element and lets you iterate from one element to the next
+7. in c++, anything within <> is in a new class that is made to include that <something>
+    in java, it just indicates that this<contains_something> via casting
+8. containers are meant to hold objects; references *arent* objects. 
